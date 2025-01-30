@@ -37,7 +37,7 @@ public class FPSCONTROLLER : MonoBehaviour
     [Header("Black And White Camera variables")]
     [SerializeField] private bool isBlackAndWhiteCamera;
     [SerializeField] private GameObject blackAndWhiteFilter;
-    [SerializeField] private GameObject videoPlayerHolder;
+    private VideoPlayer videoPlayer;
 
 
     #endregion
@@ -48,16 +48,18 @@ public class FPSCONTROLLER : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        
         originalCameraPosition = playerCamera.transform.localPosition;
-
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = true;
-
-        
-
         Time.timeScale = 1f;
+
+        videoPlayer = playerCamera.AddComponent<UnityEngine.Video.VideoPlayer>();
+        videoPlayer.targetCamera = Camera.main;
+        videoPlayer.renderMode = VideoRenderMode.CameraNearPlane;
+        videoPlayer.targetCameraAlpha = 0.0f;
+        videoPlayer.isLooping = true;
+        videoPlayer.url = "Assets/Videos/16MM Camera Overlay.mp4";
+
     }
 
 
@@ -157,7 +159,12 @@ public class FPSCONTROLLER : MonoBehaviour
         {
             isBlackAndWhiteCamera = true;
             blackAndWhiteFilter.SetActive(true);
-            videoPlayerHolder.SetActive(true);
+            
+
+            videoPlayer.targetCameraAlpha = 0.005f;
+
+            
+
             return;
         }
 
@@ -165,7 +172,12 @@ public class FPSCONTROLLER : MonoBehaviour
         {
             isBlackAndWhiteCamera = false;
             blackAndWhiteFilter.SetActive(false);
-            videoPlayerHolder.SetActive(false);
+            
+
+            videoPlayer.targetCameraAlpha = 0.0f;
+
+            
+
             return;
         }
 
