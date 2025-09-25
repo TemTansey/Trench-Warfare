@@ -3,17 +3,21 @@
  This project is a small scale horror game based around an alternate WW2 where demons and humans are fighting eachother. You the player are a simple reporter in the wrong place at the wrong time recording what is happening on the frontlines of the battlefield. 
 
  ## Contributors
- - Tem Tansey
- - Tyler Mills
- - Ben Penfold
- - Samuel Morgan
- - Saskia Brasier
+ - Tem Tansey : Main Game Developer/Secondary Audio Developer
+ - Tyler Mills : Main Game Developer/Secondary Audio Developer
+ - Ben Penfold : Main Audio Developer/Secondary Game Developer
+ - Samuel Morgan : Main Audio Developer/Secondary Game Developer
+ - Saskia Brasier : Main Audio Developer/Secondary Game Developer
 
 ## Description
 
 The project is part of a university module centered around Audio. The idea is to create a basic game with enhanced audio using tools such as Fmod and Reaper. Using Fmods unity implementation as a basis to create events and the like as they are triggered in game. The project gave 3 choices on which game would be getting the audio created for it. The first choice was a pre-made ninja game, the second choice was to use a pre-made students game and finally the last choice was to create your own game. Creating the game was the most favourable style so it was chosen.
 
 # Features
+
+The games basis is a walking simulater designed to give the player a high focus on the audio of the environment rather than the game mechanics themselves.
+
+The game features a complex first person character, leaning into a more immersive character controller where the player is able to see the character they are playing as.
 
 ## Audio
 
@@ -27,40 +31,40 @@ The project is part of a university module centered around Audio. The idea is to
  
 ### Player Audio
 
-- [ ] Breathing
-- [ ] Gas Mask Breathing
-- [ ] Player Hurt
-- [ ] Player walking on Mud
-- [ ] Player walking on Wood
-- [ ] Player walking on Snow
-- [ ] Player walking on Asphalt
-- [ ] Player walking on Bullet Casings
-- [ ] Player walking on Flesh
-- [ ] Player walking on Bones
-- [ ] Player walking on metal
-- [ ] Muffled versions of all audio
+- [x] Breathing
+- [x] Gas Mask Breathing
+- [x] Player Hurt
+- [x] Player walking on Mud
+- [x] Player walking on Wood
+- [x] Player walking on Snow
+- [x] Player walking on Asphalt
+- [x] Player walking on Bullet Casings
+- [x] Player walking on Flesh
+- [x] Player walking on Bones
+- [x] Player walking on metal
+- [x] Muffled versions of all audio
 
 ### Enemy Audio
 
-- [ ] Enemy Screaming
-- [ ] Enemy Dying
-- [ ] Enemy flesh sounds
-- [ ] Enemy bone sounds
-- [ ] Demon Screams
-- [ ] Demon Laughing
+- [x] Enemy Screaming
+- [x] Enemy Dying
+- [x] Enemy flesh sounds
+- [x] Enemy bone sounds
+- [x] Demon Screams
+- [x] Demon Laughing
 
 ### Environment Audio
 
-- [ ] Gunshots
-- [ ] Pistol Shots
-- [ ] Rifle Shots
-- [ ] MG Shots
-- [ ] Gas Deployed
-- [ ] Fire Crackle
-- [ ] Tank Rolling
-- [ ] Tank Firing
-- [ ] Bullet Wiz/Overhead sounds
-- [ ] General Explosion sounds
+- [x] Gunshots
+- [x] Pistol Shots
+- [x] Rifle Shots
+- [x] MG Shots
+- [x] Gas Deployed
+- [x] Fire Crackle
+- [x] Tank Rolling
+- [x] Tank Firing
+- [x] Bullet Wiz/Overhead sounds
+- [x] General Explosion sounds
 
 </details>
 </summary>
